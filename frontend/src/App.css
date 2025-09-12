@@ -1,0 +1,18 @@
+body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fb; color: #222; }
+.container { max-width: 1100px; margin: 0 auto; }
+h1 { text-align: center; margin-bottom: 18px; }
+.layout { display: flex; gap: 20px; }
+.left { width: 360px; }
+.right { flex: 1; }
+
+.candidate-form { background: white; padding: 12px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.candidate-form label { display:block; margin-bottom:10px; font-size:14px; }
+.candidate-form input { width:100%; padding:8px; margin-top:4px; box-sizing:border-box; }
+
+.form-actions { margin-top: 10px; display:flex; gap:8px; }
+button { padding:6px 10px; border-radius:4px; border:1px solid #ccc; background:#fff; cursor:pointer; }
+button:hover { filter:brightness(0.97); }
+
+.candidates-table { width:100%; border-collapse: collapse; background:white; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+.candidates-table th, .candidates-table td { padding:8px 10px; border-bottom: 1px solid #eee; text-align:left; }
+.error { color: #b00020; background: #ffecec; padding:8px; border-radius:4px; margin-bottom:8px; }
