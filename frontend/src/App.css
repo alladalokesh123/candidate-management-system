@@ -1,6 +1,6 @@
 body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fb; color: #222; }
 .container { max-width: 1100px; margin: 0 auto; }
-h1 { text-align: center; margin-bottom: 18px; }
+h1 { margin-bottom: 18px; }
 .layout { display: flex; gap: 20px; }
 .left { width: 360px; }
 .right { flex: 1; }

@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// GET all candidates
+//GET all candidates
 app.get('/api/candidates', (req, res) => {
   db.all('SELECT * FROM candidates ORDER BY id DESC', [], (err, rows) => {
     if (err) return res.status(500).json({ error: err.message });
@@ -14,7 +14,7 @@ app.get('/api/candidates', (req, res) => {
   });
 });
 
-// GET single candidate
+//GET single candidate
 app.get('/api/candidates/:id', (req, res) => {
   const { id } = req.params;
   db.get('SELECT * FROM candidates WHERE id = ?', [id], (err, row) => {

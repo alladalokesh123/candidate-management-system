@@ -31,6 +31,6 @@ const db = new sqlite3.Database(dbSource, (err) => {
   }
 });
 
-// export the db object
+//export the db object
 module.exports = db;
 

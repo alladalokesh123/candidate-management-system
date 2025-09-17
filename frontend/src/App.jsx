@@ -3,11 +3,10 @@ import CandidateList from "./components/CandidateList";
 import CandidateForm from "./components/CandidateForm";
 
 function App() {
-  // State
   const [candidates, setCandidates] = useState([]);
   const [editingCandidate, setEditingCandidate] = useState(null);
 
-  // Fetch candidates (READ)
+  // Fetch candidates
   const fetchCandidates = async () => {
     try {
       const res = await fetch("http://localhost:5000/api/candidates");
@@ -54,15 +53,12 @@ function App() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Candidate Management System</h1>
-
-      {/* Candidate Form */}
       <CandidateForm
         onAdd={handleAdd}
         onUpdate={handleUpdate}
         editingCandidate={editingCandidate}
       />
 
-      {/* Candidate List */}
       <CandidateList
         candidates={candidates}
         onEdit={setEditingCandidate}
