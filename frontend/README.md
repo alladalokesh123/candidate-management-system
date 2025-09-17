@@ -13,7 +13,7 @@ This project supports **CRUD operations** (Create, Read, Update, Delete) on cand
 - Frontend built with **React.js**
 
 ## Project Structure 
-'''
+```
 CandidateManagementProject/
 |
 ├── backend/
@@ -30,7 +30,8 @@ CandidateManagementProject/
 │ │ │ ├── CandidateList.jsx
 │ ├── package.json
 
-'''
+```
+
 
 ## setup backend 
 - cd backend
